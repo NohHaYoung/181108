@@ -5,14 +5,17 @@
 
 int main(void) {
 	
-	int i = 365;
-	int *ptr = &i;
+	int x = 10;
+	int y = 20;
+	int *ptr;
 	
-	printf("i address : %d\n", &i );
-	printf("i value : %d\n", i );
+	ptr = &x;
 	
-	printf("ptr address : %d\n", ptr );
-	printf("ptr value : %u\n", *ptr );
+	printf("ptr value : %u\n", *ptr);
+	
+	ptr = &y;
+	
+	printf("ptr value : %u\n", *ptr);
 		
 	return 0;
 }
