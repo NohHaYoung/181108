@@ -6,16 +6,15 @@
 int main(void) {
 	
 	int x = 10;
-	int y = 20;
 	int *ptr;
 	
 	ptr = &x;
 	
 	printf("ptr value : %u\n", *ptr);
 	
-	ptr = &y;
+	*ptr = 20;
 	
-	printf("ptr value : %u\n", *ptr);
+	printf("x value : %d\n", x);
 		
 	return 0;
 }
