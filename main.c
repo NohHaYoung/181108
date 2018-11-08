@@ -6,16 +6,20 @@
 int main(void) {
 	
 	int i;
-	int grade[5];
+	int grade[5] = {10, 20, 30, 40, 50};
 	
-	grade[0] = 10;
-	grade[1] = 20;
-	grade[2] = 30;
-	grade[3] = 40;
-	grade[4] = 50;
-	
-	i=3;
-	printf("grade[%d] = %d\n", i, grade[i]);
+	int average=0;
+	int *ptr;
 		
+	//pointer setting
+	
+	ptr = grade;
+		
+	//average calculation
+	
+	for(i=0;i<5;i++){
+		average += ptr[i]; // ptr[i] = *(ptr+i)
+	}
+		printf("average : %d\n", average/5);		
 	return 0;
 }
