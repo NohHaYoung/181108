@@ -3,23 +3,25 @@
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
+void swap(int *a, int*b)
+{
+	int temp;
+	
+	temp = *a;
+	*a = *b;
+	*b = temp;
+	
+	}	
+
 int main(void) {
 	
-	int i;
-	int grade[5] = {10, 20, 30, 40, 50};
+	int x = 19;
+	int y = 29;
+	printf("x value : %d, y value : %d\n", x, y);
 	
-	int average=0;
-	int *ptr;
-		
-	//pointer setting
+	swap(&x, &y);
 	
-	ptr = grade;
-		
-	//average calculation
-	
-	for(i=0;i<5;i++){
-		average += ptr[i]; // ptr[i] = *(ptr+i)
-	}
-		printf("average : %d\n", average/5);		
+	printf("x value : %d, y value : %d\n", x, y);
+			
 	return 0;
 }
