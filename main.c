@@ -5,16 +5,17 @@
 
 int main(void) {
 	
-	int x = 10;
-	int *ptr;
+	int i;
+	int grade[5];
 	
-	ptr = &x;
+	grade[0] = 10;
+	grade[1] = 20;
+	grade[2] = 30;
+	grade[3] = 40;
+	grade[4] = 50;
 	
-	printf("ptr value : %u\n", *ptr);
-	
-	*ptr = 20;
-	
-	printf("x value : %d\n", x);
+	i=3;
+	printf("grade[%d] = %d\n", i, grade[i]);
 		
 	return 0;
 }
